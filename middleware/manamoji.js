@@ -15,7 +15,7 @@ function _(before, after) {
 ADDTL.forEach(a => { _(a) });
 COLORS.forEach(c => { _(c) });
 COLORS.forEach(c => { _(`2/${c}`, `2${c}`) });
-COLORS.forEach(c => { _(`${c}P`) });
+COLORS.forEach(c => { _(`${c}/P`, `${c}p`) });
 COLORS.forEach(c => { COLORS.forEach(d => { if (c != d) _(`${c}${d}`) }) });
 NUMBERS.forEach(n => { _(n) });
 
