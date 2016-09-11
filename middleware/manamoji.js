@@ -16,7 +16,9 @@ ADDTL.forEach(a => { _(a) });
 COLORS.forEach(c => { _(c) });
 COLORS.forEach(c => { _(`2/${c}`, `2${c}`) });
 COLORS.forEach(c => { _(`${c}/P`, `${c}p`) });
-COLORS.forEach(c => { COLORS.forEach(d => { if (c != d) _(`${c}${d}`) }) });
+COLORS.forEach(c => { COLORS.forEach(d => {
+  if (c != d) _(`${c}/${d}`, `${c}${d}`);
+}) });
 NUMBERS.forEach(n => { _(n) });
 
 module.exports = function(str) {
