@@ -2,6 +2,7 @@ const aethervial = require('./aethervial');
 const boldfirst = require('./middleware/boldfirst');
 const Botkit = require('botkit');
 const manamoji = require('./middleware/manamoji');
+const quoteall = require('./middleware/quoteall');
 const urlencode = require('urlencode');
 
 const PATTERN = /\[\[([^\]]+)\]\]/g;
@@ -28,7 +29,7 @@ controller.hears([PATTERN], TYPES, (bot, message) => {
     promises.push(new Promise((resolve, reject) => {
       let cardname = match.substring(0, match.length - 2).substring(2);
       aethervial(cardname).then(card => {
-        resolve(boldfirst(manamoji(card)));
+        resolve(quoteall(boldfirst(manamoji(card))));
       });
     }));
   });
