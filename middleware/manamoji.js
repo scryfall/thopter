@@ -1,9 +1,13 @@
-let substitutions = {'CHAOS': ':mana-chaos:'};
+let substitutions = {
+  'CHAOS': ':mana-chaos:',
+  '{∞}': ':mana-infinity:',
+  '{½}': ':mana-half:',
+  '{hr}': ':mana-hr:'
+};
 
 let COLORS = ['W', 'U', 'B', 'R', 'G'];
 let NUMBERS = [...Array(21).keys()];
-let ADDTL = ['C', 'E', 'HR', 'HW', 'T', 'Q', 'S', 'X', 'Y', 'Z', '∞',
-             '½', '100', '1000000'];
+let ADDTL = ['C', 'E', 'HR', 'HW', 'T', 'Q', 'S', 'X', 'Y', 'Z'];
 
 function _(before, after) {
   if (typeof after === 'undefined') {
