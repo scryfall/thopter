@@ -1,6 +1,6 @@
 # thopter
 
-Slackbot to unfurl MTG cards from [aethervial.net](https://www.aethervial.net).
+Slackbot to unfurl MTG cards from [scryfall.com](https://www.scryfall.com).
 
 
 ## Setup
