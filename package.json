@@ -1,7 +1,7 @@
 {
   "name": "thopter",
   "version": "0.1.0",
-  "description": "Slackbot to unfurl MTG cards from aethervial.net",
+  "description": "Slackbot to unfurl MTG cards from scryfall.com",
   "main": "index.js",
   "dependencies": {
     "bluebird": "^3.4.6",

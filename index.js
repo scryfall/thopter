@@ -1,4 +1,4 @@
-const aethervial = require('./aethervial');
+const scryfall = require('./scryfall');
 const boldfirst = require('./middleware/boldfirst');
 const Botkit = require('botkit');
 const manamoji = require('./middleware/manamoji');
@@ -28,7 +28,7 @@ controller.hears([PATTERN], TYPES, (bot, message) => {
   message.match.forEach(match => {
     promises.push(new Promise((resolve, reject) => {
       let cardname = match.substring(0, match.length - 2).substring(2);
-      aethervial(cardname).then(card => {
+      scryfall(cardname).then(card => {
         resolve(quoteall(boldfirst(manamoji(card))));
       });
     }));

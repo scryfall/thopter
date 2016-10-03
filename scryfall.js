@@ -1,10 +1,10 @@
 const request = require('request-promise-native');
 const URI = require('urijs');
 
-const AETHERVIAL = 'https://api.aethervial.net/cards/named';
+const SCRYFALL = 'https://api.scryfall.com/cards/named';
 
 module.exports = function(str) {
-  let url = URI(AETHERVIAL).query({
+  let url = URI(SCRYFALL).query({
     fuzzy: str,
     format: 'text'
   }).toString();
