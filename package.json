@@ -1,15 +1,13 @@
 {
   "name": "thopter",
-  "version": "0.1.0",
-  "description": "Slackbot to unfurl MTG cards from aethervial.net",
+  "version": "1.0.0",
+  "description": "Slackbot to unfurl MTG cards from scryfall.com",
   "main": "index.js",
   "dependencies": {
-    "bluebird": "^3.4.6",
     "botkit": "^0.2.2",
     "request": "^2.74.0",
     "request-promise-native": "^1.0.3",
-    "urijs": "^1.18.1",
-    "urlencode": "^1.1.0"
+    "urijs": "^1.18.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -18,12 +16,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chuckharmston/thopter.git"
+    "url": "git+https://github.com/scryfall/thopter.git"
   },
   "keywords": [
     "node",
     "nodejs",
     "slack",
+    "slackbot",
     "botkit",
     "mtg",
     "magic",
@@ -32,9 +31,9 @@
   "author": "Chuck Harmston",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chuckharmston/thopter/issues"
+    "url": "https://github.com/scryfall/thopter/issues"
   },
-  "homepage": "https://github.com/chuckharmston/thopter#readme",
+  "homepage": "https://github.com/scryfall/thopter#readme",
   "engines": {
     "node": "6.3.1"
   }
