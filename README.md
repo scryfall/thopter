@@ -1,3 +1,5 @@
+**Thopter is deprecated now that we have a [shiny new centralized bot](https://scryfall.com/bots), but it should still work fine if you’d like to host (or tweak) your own.**
+
 # thopter
 
 Slackbot to unfurl MTG cards from [scryfall.com](https://www.scryfall.com).
