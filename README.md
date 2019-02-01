@@ -1,4 +1,4 @@
-**Thopter is deprecated now that we have a [shiny new centralized bot](https://scryfall.com/bots), but it should still work fine if you’d like to host (or tweak) your own.**
+**The Thopter codebase is no longer used or maintained by Scryfall. This project is archived for posterity, you should not use this code. Please check out our shiny new [centralized bots instead](https://scryfall.com/bots)**
 
 # thopter
 
